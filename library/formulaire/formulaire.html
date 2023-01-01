@@ -1,0 +1,103 @@
+
+<!-- // FORMULAIRE -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<form action="" method="get">	<!-- A MODIFIER -->
+
+		<fieldset class="field-1">
+		<legend>Coordonnées de base</legend>
+			<label for="nom">nom</label>
+			<input type="text" name="nom" id="nom" required>  <!-- maxlength="10"  / value="valeur renseignée par défaur" / placeholder="exemple : Isabelle" /> -->
+
+			<label for="mail">email</label>
+			<input type="email" name="mail" id="mail" required autofocus> 
+		
+			<label for="site">URL</label>
+			<input type="url" name="site" id="site">
+
+			<label for="telephone">téléphone</label>
+			<input type="tel" name=telephone" id="telephone">
+		
+			<label for="nombre">Age</label>
+			<input type="number" name="nombre" id="nombre">
+		
+			<label for="date">Année de naissance</label>
+			<input type="date" name="date" id="date" value="01/01/2023" min="01/01/1950" max="31/12/2025"> <!-- type="time" / "week" / "month" / "datetime" / "datetime-local" -->
+		</fieldset>
+
+		<fieldset class="field-2">
+		<legend>Réglages</legend>
+
+			<div>
+			<label for="barre">Réglage barre (par 2)</label>
+			<input type="range" name="barre" id="barre" step="2">
+			</div>
+
+			<div>
+			<label for="recherche">Rechercher</label>
+			<input type="search" name="recherche" id="recherche">
+			<button>GO!</button>
+			</div>
+
+
+		</fieldset>
+		
+		<fieldset class="field-3">
+		<legend>Choix multiples</legend>
+		
+			<div>
+			<input type="checkbox" name="choix-1"><label for="choix-1">Choix 1</label>
+			</div>
+
+			<div>
+			<input type="checkbox" name="choix-2"><label for="choix-2">Choix 2</label>
+			</div>
+
+			<div>
+			<input type="checkbox" name="choix-3"><label for="choix-3">Choix 3</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+		<legend>Choix multiples Radio</legend>
+			<div>
+			<input type="radio" name="age" value="moins15" id="moins15"><label for="moins15">Moins de 15 ans</label>
+			</div>
+
+			<div>
+			<input type="radio" name="age" value="15-25" id="15-25"><label for="15-25">Entre 15 et 25 ans</label>
+			</div>
+
+			<div>
+			<input type="radio" name="age" value="plus25" id="plus25"><label for="plus25">Plus de 25 ans</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<div>
+			<label for="pays">Dans quel pays vivez-vous ?</label>
+			<select name="pays" id="pays">
+				<option value="france" selected>France</option>
+				<option value="espagne">Espagne</option>
+				<option value="italie">Italie</option>
+				<option value="allemagne">Allemagne</option>
+			</select>
+			</div>
+		</fieldset>
+		
+		<fieldset class="field-6">
+			<label for="msg">message</label>
+			<textarea name="msg" id="msg" rows="10">VALEUR PAR DEFAUT</textarea>
+		</fieldset>
+
+		<input class="cta" type="submit" value="Envoyer">
+
+</body>
+</html>

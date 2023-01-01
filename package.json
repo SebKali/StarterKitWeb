@@ -1,0 +1,13 @@
+{
+  "name": "starterkit",
+  "version": "1.0.0",
+  "description": "package.json du starter kit",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./main.scss:./public/cssNoPrefixed/style.css --style expanded",
+	"prefix":"postcss ./public/cssNoPrefixed/styleJoeblow.css --use autoprefixer -d ./public"
+ 
+  },
+  "author": "Sébastien BRIGNOLI",
+  "license": "ISC"
+}

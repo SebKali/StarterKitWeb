@@ -1,0 +1,49 @@
+
+// VARIABLES
+
+// COULEURS
+$color1:$vert-menthe;
+$color2:;
+$color3:;
+$color4:;
+$color5:;
+$color-bg:;
+
+$white:#FFFFFF;
+$black:#000000;
+$vert-menthe:#2CDDA6;
+$bleu-marine:#001534;
+$vert-clair:#D6FFF5;
+
+
+// PATH
+$image-path:images/;
+
+
+// SIZE / ESPACEMENTS
+$padding__page:1rem 1rem 1rem 1rem;
+$margin__page:1rem 1rem 1rem 1rem;
+
+
+// FONT SIZE
+$font-size :(
+	titre1:3rem,
+	titre2:2rem,
+	titre3:1.5rem,
+	text:1rem,
+	quote:1.5rem,
+	nav:1.5rem,
+);
+
+
+// BREAKPOINTS
+$breakpoints :(
+	mobile:480px,
+	tablet:768px,
+	desktop-small:1024px,
+	desktop-medium:1200px,
+);
+
+
+// DIFFERENTS LAYOUTS
+

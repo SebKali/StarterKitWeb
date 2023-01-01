@@ -1,0 +1,10 @@
+
+// TYPOGRAPHY
+
+@use "./../abstract/_variables.scss" as variable;
+@use "./../abstract/_mixins.scss" as mixin;
+
+
+body {
+	font-family:Arial,sans-serif;
+}
