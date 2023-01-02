@@ -1,0 +1,38 @@
+
+/* EXEMPLE DE BOUTONS ANIMES */ 
+/* --------------------------------- */
+
+.button {
+
+	/* FONT */
+	/* ---- */
+	font-family:"Arial", sans-serif;
+	font-size:14px;
+	color:white;
+	width:100px;
+	height:40px;
+
+	/* SHAPE */
+	/* ----- */
+	background:linear-gradient(to top right, #4568dc, #b06ab3);
+	border-radius:20px;
+	box-shadow:5px 5px 12px -5px black;
+
+	/* STRUCTURE */
+	/* --------- */
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:20px;
+}
+
+
+.button--1 {
+	transform:scale(1);
+	transition:transform 0.5s;
+}
+
+.button--1:hover {
+	transform:scale(1.2);
+	transition: transform 0.5s;
+}
