@@ -9,13 +9,14 @@
 	font-family:"Arial", sans-serif;
 	font-size:14px;
 	color:white;
-	width:100px;
-	height:40px;
+	font-weight:600;
 
 	/* SHAPE */
 	/* ----- */
+	width:150px;
+	height:50px;
 	background:linear-gradient(to top right, #4568dc, #b06ab3);
-	border-radius:20px;
+	border-radius:25px;
 	box-shadow:5px 5px 12px -5px black;
 
 	/* STRUCTURE */
@@ -26,13 +27,35 @@
 	margin:20px;
 }
 
-
+/* BOUTON 1 */
+/* -------- */
 .button--1 {
-	transform:scale(1);
 	transition:transform 0.5s;
 }
 
 .button--1:hover {
 	transform:scale(1.2);
 	transition: transform 0.5s;
+}
+
+
+/* BOUTON 2 */
+/* -------- */
+.button--2 {
+	background:white;
+	color:#b06ab3;
+	border:3px solid #b06ab3;
+	transition: transform 0.4s, background 0.25s 0.15s;
+}
+
+.button--2:hover {
+	background:#b06ab3;
+	color:white;
+	transform:scale(1.2);
+}
+
+.button--3 {
+}
+
+.button--3:hover {
 }

@@ -1,5 +1,6 @@
 
 /* FORMULAIRE STYLE */
+/* ---------------- */
 
 form {
 	width:60%;
@@ -29,20 +30,31 @@ label {
 }
 
 input, textarea {
+	transition:background-color 0.2s;
+
+	/* SHAPE - FONT */
 	font-size:15px;
 	font-family:Arial,sans-serif;
 	background-color:#F1F1EF;
-	border-radius:5px;
-	padding:5px;
-	margin:0 0 10px 5px;;
+	border-radius:25px;
+	padding:5px 10px 5px 10px;
+	margin:0 0 10px 5px;
 }
 
 input:focus, textarea:focus{
-	background-color:black;
-	color:white;
+	color:black;
 	border:3px solid #6DD5FA;
 }
 
+input:not(:focus):invalid {
+	transition:background-color 0.5s;
+
+	background-color:#b20a37;
+	color:white;
+}
+
+/* -- AUTRES -- */
+/* ------------ */
 
 .field-1 {
 	display:flex;
