@@ -35,7 +35,6 @@
 
 .button--1:hover {
 	transform:scale(1.2);
-	transition: transform 0.5s;
 }
 
 
@@ -45,7 +44,7 @@
 	background:white;
 	color:#b06ab3;
 	border:3px solid #b06ab3;
-	transition: transform 0.4s, background 0.25s 0.15s;
+	transition: transform 0.4s ease-out, background 0.25s 0.15s ease-in;
 }
 
 .button--2:hover {
@@ -54,8 +53,35 @@
 	transform:scale(1.2);
 }
 
+
+/* BOUTON 3 */
+/* -------- */
 .button--3 {
+	overflow:hidden;
+	transition: transform 0.4s 0.1s ease-out;
+}
+
+.button__texte {
+	position:relative;
+	display:block;
+	transition:transform 0.4s ease-out;
+}
+
+.button__texte:after {
+	position:absolute;
+	top:200px;
+	right:0;
+	bottom:0;
+	left:0;
+	content:"COUCOU";
+	text-align:center;
+	transition:transform 0.5s ease-in-out;
 }
 
 .button--3:hover {
+	transform:scale(1.1);
 }
+.button--3:hover > .button__texte{
+	transform:translateY(-200px);
+}
+

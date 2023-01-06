@@ -2,10 +2,15 @@
 /* EXEMPLE DE CREATION DE CARTE FLIP */ 
 /* --------------------------------- */
 
+
+body {
+	perspective:1000px;
+	/* C'est le CONTENEUR de la carte, et non la carte, qui contient l'élément de perspective pour donner l'apparence 3D */
+}
+
 .card {
 	transition:transform 1s; 
 	transform-style:preserve-3d;
-	perspective:50px;
 	position:relative;
 
 	/* SHAPE */
@@ -57,6 +62,5 @@
 
 /* Si un conteneur contient la carte, utilisez .card-conteneur > .card 
 .card {
-	perspective:50px;
 	position:relative;
 }
