@@ -2,7 +2,20 @@
 /* EXEMPLE DE BOUTONS ANIMES */ 
 /* --------------------------------- */
 
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	width:250px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
 .button {
+	cursor:pointer;
 
 	/* FONT */
 	/* ---- */
@@ -25,6 +38,19 @@
 	justify-content:center;
 	align-items:center;
 	margin:20px;
+}
+
+.carre {
+	transform:scale(0.1);
+	transition:transform 0.6s ease-in;
+
+	/* STRUCTURE */
+	width:100px;
+	height:100px;
+	background:#76D7A3;
+	border-radius:5px;
+	box-shadow:5px 5px 12px -5px black;
+	margin:20px 20px 10px 20px;
 }
 
 /* BOUTON 1 */
@@ -59,15 +85,17 @@
 .button--3 {
 	overflow:hidden;
 	transition: transform 0.4s 0.1s ease-out;
+
+	margin-bottom:35px;
 }
 
-.button__texte {
+.button__texte--3 {
 	position:relative;
 	display:block;
 	transition:transform 0.4s ease-out;
 }
 
-.button__texte:after {
+.button__texte--3:after {
 	position:absolute;
 	top:200px;
 	right:0;
@@ -81,7 +109,79 @@
 .button--3:hover {
 	transform:scale(1.1);
 }
-.button--3:hover > .button__texte{
+.button--3:hover > .button__texte--3{
 	transform:translateY(-200px);
 }
 
+
+/* BOUTON 4 */
+/* -------- */
+
+.button--4 {
+	transition: transform 0.3s ease-in-out;
+
+	margin:5px;
+}
+
+.conteneur--4:hover .button--4 {
+	transform:rotate(720deg) scale(1.1);
+}
+
+
+/* BOUTON 5 */
+/* -------- */
+.conteneur--5 {
+	display:flex;
+	flex-direction:column-reverse;
+	align-items:center;
+}
+
+.button--5 {
+	transition:transform 290ms ease-in;
+}
+
+.carre {
+	transform:scale(0.05) rotate(90deg);
+	transition:transform 340ms ease-in-out;
+	overflow:hidden;
+
+	/* STRUCTURE */
+	margin:20px 20px 10px 20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100px;
+	height:100px;
+
+	/* PAINT */
+	background:#76D7A3;
+	border-radius:5px;
+	box-shadow:5px 5px 12px -5px black;
+}
+
+.carre__texte--5 {
+	display:block;
+	transition:transform 500ms ease-out, color 200ms ease-out 200ms;
+	transform:translateY(250%);
+
+
+	/* FONT */
+	font-family:"Arial", sans-serif;
+	font-size:14px;
+	font-weight:600;
+	color:#76D7A3;
+}
+
+.button--5:hover {
+	transform:scale(0.9);
+}
+
+.button--5:hover + .carre {
+	transform:scale(1) rotate(0deg);
+
+}
+
+.button--5:hover + .carre .carre__texte--5 {
+	transform:translateY(0);
+	color:white;
+}
