@@ -250,3 +250,49 @@ body {
 .button--9:hover + .barre:before {
 	transform:scaleX(1);
 }
+
+/* BOUTON 10 */
+/* --------- */
+
+.button--10 {
+    perspective: 500px;
+}
+
+.button--10:hover > .button__flip {
+    transform: rotateX(-180deg);
+}
+
+.button__flip {
+	transform-style: preserve-3d;
+    transition: transform 500ms cubic-bezier(.7,.01,.23,.99);
+
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+.button__flip--off {
+	transform: rotateX(0deg) translateZ(25px);
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+
+	/* PAINT */
+   	background:#4568dc;
+}
+
+.button__flip--on {
+    transform: rotateX(90deg) translateZ(25px);
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+
+	/* PAINT */
+	background:#b06ab3;
+}
