@@ -64,7 +64,6 @@ body {
 	transform:scale(1.2);
 }
 
-
 /* BOUTON 3 */
 /* -------- */
 .button--3 {
@@ -348,6 +347,37 @@ body {
 }
 
 
+/* BOUTON 11 */
+/* --------- */
+.button--11 {
+	position:relative;
+	z-index:1;
+}
 
+.button--11::after {
+	content:"";
+	opacity:0;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:linear-gradient(to top right, #b06ab3 , #4568dc);
+	border-radius:25px;
+	transition:opacity 350ms ease-in 50ms, transform 350ms 400ms;
+	z-index:-1;
+}
+
+
+.button--11 {
+}
+
+.button--11:hover::after {
+	opacity:1;
+	transform:scale(1.02);
+}
+
+
+	
 
 
