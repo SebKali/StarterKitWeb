@@ -191,6 +191,11 @@ body {
 	transform:perspective(120px) translate3D(100%, -10%, 50px);
 }
 
+.conteneur--7:hover .button__texte--7 {
+	transform:translateX(30px);
+	transition:transform 550ms ease-in-out 00ms;
+}
+
 
 /* BOUTON 8 */
 /* -------- */
