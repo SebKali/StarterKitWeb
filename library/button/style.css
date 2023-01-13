@@ -192,10 +192,21 @@ body {
 }
 
 .conteneur--7:hover .button__texte--7 {
-	transform:translateX(30px);
-	transition:transform 550ms ease-in-out 00ms;
+	animation:secousse 550ms 300ms;
 }
 
+@keyframes secousse {
+	0% {
+		transform:translateX(0px);
+	}
+
+	60% {
+		transform:translateX(3px);
+	}
+	100% {
+		transform:translateX(-1px);
+	}
+}
 
 /* BOUTON 8 */
 /* -------- */
