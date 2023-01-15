@@ -6,32 +6,33 @@
 /* ABSTRACT */
 /* -------- */
 // A SUPPRIMER SI PAS DE CODE DIRECTEMENT DANS CE FICHIER
-@use "./abstract/_variables.scss";
-@use "./abstract/_mixins.scss";
+@use "./sass/abstract/_variables.scss";
+@use "./sass/abstract/_mixins.scss";
+@use "./sass/abstract/_functions.scss";
 
 /* BASE */
 /* ---- */
 /* -------- STRUCTURE */
-@use "./base/_reset.scss";
+@use "./sass/base/_reset.scss";
 /* ---------- TYPOGRAPHY */
-@use "./base/_typo.scss";
+@use "./sass/base/_typo.scss";
 
 /* LAYOUT */
 /* ------ */
 /* ------------ HEADER */
-@use "./layouts/_header.scss";
+//@use "./sass/layouts/_header.scss";
 /* ------------ BOX */
-@use "./layouts/_box.scss";
+//@use "./sass/layouts/_box.scss";
 /* ------------ FORMULAIRE */
-@use "./layouts/_formulaire.scss";
+//@use "./sass/layouts/_formulaire.scss";
 /* ------------ FOOTER */
-@use "./layouts/_footer.scss";
+//@use "./sass/layouts/_footer.scss";
 
 
 /* COMPOSANTS */
 /* ---------- $/
 /* ------------ CTA */
-@use "./componants/_cta.scss";
+@use "./sass/componants/_cta.scss";
 
 
 /* PAGES */
